@@ -14,4 +14,4 @@ COPY yarn.lock /base/yarn.lock
 
 RUN cd /base && npm install
 
-ENV NODE_PATH /base/node_modules:$NODE_PATH
+ENV NODE_PATH ../base/node_modules:$NODE_PATH
