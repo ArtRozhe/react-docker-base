@@ -10,7 +10,6 @@ RUN mkdir /base
 # Install all dependencies of the base image
 COPY package.json /base/package.json
 COPY package-lock.json /base/package-lock.json
-COPY yarn.lock /base/yarn.lock
 
 RUN cd /base && npm install
 
